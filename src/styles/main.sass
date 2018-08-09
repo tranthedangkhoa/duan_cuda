@@ -4,14 +4,65 @@ $mauvang: #ffdd99 // Vang
 $maudo: #d74680 // Đỏ 
 $mauxanh: #3c5499 // Xanh 
 
-home_slider
+.home_slider
     background: $mautim
     min-height: 368px
-    color: #ffff 
+    color: #fff 
     display: flex
     justify-content: center
     align-items: center
+    text-align: center
     .btn_more 
-        background: cyan
+        background: darken(yellow, 10)
         color: white
-        padding 5rem 3rem
+        padding: 0.5rem 2rem
+        border-radius: -10px
+.home_services
+    background: $maungoc
+    min-height: 368px
+    color: #fff 
+    display: flex
+    jusify-content: center
+    align-items: center
+    text-align: center
+    padding: 4rem
+    h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: darken($maungoc, 20%)
+            width: 60px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    .text
+        text-align: center
+.home_ourbeautiful
+    background: lighten($mauxanh,45%)
+    min-height: 568px
+    color: #fff
+    text-align: center
+    padding: 4rem
+    h2
+        position: relative
+        padding-bottom: .5rem
+        &:before
+            content: ''
+            display: block
+            height: 3px
+            background: lighten(grey,20%)
+            width: 60px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    h4
+        color: black
+    img
+        border-radius: 50%          
+        
+    
